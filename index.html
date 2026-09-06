@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0b6e4f">
+<meta name="description" content="2026年9月 四国一周サイクリング スケジュール・ルート・グルメマップ">
+<title>四国一周 2026 ｜ サイクリング行程</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚴</text></svg>">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="app-header">
+  <div class="hdr-main">
+    <h1>🚴 四国一周 2026</h1>
+    <p id="hdr-sub">9/19（土）〜 9/26（土）・大分市寺崎町 発着</p>
+  </div>
+  <button id="btn-info" class="hdr-btn" aria-label="全体情報">ℹ️</button>
+</header>
+
+<nav class="daytabs" id="daytabs" aria-label="日付選択"></nav>
+
+<div id="map" role="application" aria-label="ルートマップ"></div>
+
+<div class="map-tools">
+  <button id="btn-fit" class="tool-btn">🔍 全体表示</button>
+  <button id="btn-layer" class="tool-btn">🗺️ 地図切替</button>
+  <span id="route-note" class="route-note"></span>
+</div>
+
+<main id="content">
+  <div class="loading">読み込み中…</div>
+</main>
+
+<div id="sheet" class="sheet" hidden>
+  <div class="sheet-backdrop" data-close></div>
+  <div class="sheet-body">
+    <button class="sheet-close" data-close aria-label="閉じる">✕</button>
+    <div id="sheet-content"></div>
+  </div>
+</div>
+
+<footer class="app-footer">
+  <p>平坦区間は休憩込み平均20km/h、山岳区間は17km/hで所要時間を算出。</p>
+  <p>時刻は目安です。フェリーと宿の時刻は確定・予約済み。</p>
+  <p class="attrib">地図: © OpenStreetMap contributors ｜ ルート: BRouter</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="app.js"></script>
+</body>
+</html>
