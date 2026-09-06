@@ -28,6 +28,7 @@ var currentDayId = null;
 var variantChoice = {};      // dayId -> variantId
 var geoCache = {};           // file -> geojson
 var markerIndex = {};        // key -> leaflet marker
+var drawToken = 0;           // guards against a slow fetch painting onto a later view
 
 /* ---------------- boot ---------------- */
 
@@ -246,6 +247,7 @@ function renderDay(day) {
 /* ---------------- map drawing ---------------- */
 
 function drawDay(day) {
+  var token = ++drawToken;
   layerGroup.clearLayers();
   markerIndex = {};
   var eff = effective(day);
@@ -299,6 +301,7 @@ function drawDay(day) {
 
   routes.forEach(function (r) {
     loadGeo(r.file).then(function (gj) {
+      if (token !== drawToken) return;   // user moved on while this was in flight
       var layer = L.geoJSON(gj, {
         style: { color: r.color || '#0b6e4f', weight: r.weight || 5, opacity: .82, lineJoin: 'round' }
       });
@@ -311,7 +314,7 @@ function drawDay(day) {
       failed++;
     }).then(function () {
       pending--;
-      if (pending === 0) {
+      if (pending === 0 && token === drawToken) {
         if (rb.isValid()) {
           rb.extend(bounds.isValid() ? bounds : rb);
           map.fitBounds(rb, { padding: [26, 26] });
@@ -333,6 +336,7 @@ function loadGeo(file) {
 }
 
 function fitAll() {
+  var token = ++drawToken;
   var all = L.latLngBounds([]);
   var files = [];
   PLAN.days.forEach(function (d) {
@@ -346,13 +350,14 @@ function fitAll() {
   if (!pending) { map.setView([33.7, 133.3], 8); return; }
   files.forEach(function (r) {
     loadGeo(r.file).then(function (gj) {
+      if (token !== drawToken) return;
       var layer = L.geoJSON(gj, { style: { color: r.color || '#0b6e4f', weight: 3.5, opacity: .75 } });
       layer.bindPopup('<b>' + escapeHtml(r.label || '') + '</b>');
       layer.addTo(layerGroup);
       all.extend(layer.getBounds());
     }).catch(function () {}).then(function () {
       pending--;
-      if (pending === 0 && all.isValid()) map.fitBounds(all, { padding: [22, 22] });
+      if (pending === 0 && token === drawToken && all.isValid()) map.fitBounds(all, { padding: [22, 22] });
     });
   });
   document.getElementById('route-note').textContent = '全行程を表示中（日付タブで戻る）';

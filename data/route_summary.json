@@ -1,0 +1,272 @@
+{
+    "day1a-home-usuki":  {
+                             "label":  "Oita Terasaki -\u003e Usuki Port",
+                             "distanceKm":  32.4,
+                             "ascentM":  173,
+                             "durationH":  1.8,
+                             "durationText":  "1h47m",
+                             "avgSpeedKmh":  18,
+                             "points":  575,
+                             "profile":  "fastbike-asia-pacific",
+                             "source":  "BRouter (brouter.de public API)",
+                             "file":  "routes/day1a-home-usuki.geojson",
+                             "approximate":  false,
+                             "start":  [
+                                           33.23633,
+                                           131.61359
+                                       ],
+                             "end":  [
+                                         33.12667,
+                                         131.81328
+                                     ],
+                             "bbox":  [
+                                          131.6128,
+                                          33.1221,
+                                          131.8133,
+                                          33.2555
+                                      ]
+                         },
+    "day1b-yawatahama-sukumo":  {
+                                    "label":  "Yawatahama Port -\u003e Uwajima -\u003e Ainan -\u003e Sukumo",
+                                    "distanceKm":  99.4,
+                                    "ascentM":  986,
+                                    "durationH":  6.2,
+                                    "durationText":  "6h14m",
+                                    "avgSpeedKmh":  16,
+                                    "points":  2544,
+                                    "profile":  "fastbike-asia-pacific",
+                                    "source":  "BRouter (brouter.de public API)",
+                                    "file":  "routes/day1b-yawatahama-sukumo.geojson",
+                                    "approximate":  false,
+                                    "start":  [
+                                                  33.46331,
+                                                  132.42002
+                                              ],
+                                    "end":  [
+                                                32.93662,
+                                                132.72651
+                                            ],
+                                    "bbox":  [
+                                                 132.42,
+                                                 32.9366,
+                                                 132.7265,
+                                                 33.4635
+                                             ]
+                                },
+    "day2-sukumo-kochi":  {
+                              "label":  "Sukumo -\u003e Shimanto -\u003e Kubokawa -\u003e Kure -\u003e Susaki -\u003e Kochi",
+                              "distanceKm":  140.9,
+                              "ascentM":  1213,
+                              "durationH":  8.5,
+                              "durationText":  "8h28m",
+                              "avgSpeedKmh":  16.6,
+                              "points":  3986,
+                              "profile":  "fastbike-asia-pacific",
+                              "source":  "BRouter (brouter.de public API)",
+                              "file":  "routes/day2-sukumo-kochi.geojson",
+                              "approximate":  false,
+                              "start":  [
+                                            32.93662,
+                                            132.72651
+                                        ],
+                              "end":  [
+                                          33.559,
+                                          133.53404
+                                      ],
+                              "bbox":  [
+                                           132.7265,
+                                           32.9347,
+                                           133.5341,
+                                           33.559
+                                       ]
+                          },
+    "day2-alt-nikobuchi":  {
+                               "label":  "Susaki -\u003e Nikobuchi (R194) -\u003e Kochi (alternative)",
+                               "distanceKm":  87.9,
+                               "ascentM":  1224,
+                               "durationH":  5.9,
+                               "durationText":  "5h55m",
+                               "avgSpeedKmh":  14.9,
+                               "points":  2570,
+                               "profile":  "fastbike-asia-pacific",
+                               "source":  "BRouter (brouter.de public API)",
+                               "file":  "routes/day2-alt-nikobuchi.geojson",
+                               "approximate":  false,
+                               "start":  [
+                                             33.39997,
+                                             133.27974
+                                         ],
+                               "end":  [
+                                           33.559,
+                                           133.53404
+                                       ],
+                               "bbox":  [
+                                            133.2433,
+                                            33.3975,
+                                            133.5341,
+                                            33.6313
+                                        ]
+                           },
+    "day3-kochi-tokushima":  {
+                                 "label":  "Kochi -\u003e Muroto Cape -\u003e Kannoura -\u003e Anan -\u003e Tokushima",
+                                 "distanceKm":  218.4,
+                                 "ascentM":  1021,
+                                 "durationH":  11.8,
+                                 "durationText":  "11h48m",
+                                 "avgSpeedKmh":  18.5,
+                                 "points":  5926,
+                                 "profile":  "fastbike-asia-pacific",
+                                 "source":  "BRouter (brouter.de public API)",
+                                 "file":  "routes/day3-kochi-tokushima.geojson",
+                                 "approximate":  false,
+                                 "start":  [
+                                               33.559,
+                                               133.53404
+                                           ],
+                                 "end":  [
+                                             34.06299,
+                                             134.54998
+                                         ],
+                                 "bbox":  [
+                                              133.5337,
+                                              33.245,
+                                              134.6689,
+                                              34.0635
+                                          ]
+                             },
+    "day4-tokushima-imabari":  {
+                                   "label":  "Tokushima -\u003e Naruto -\u003e Takamatsu -\u003e Chichibugahama -\u003e Niihama -\u003e Imabari",
+                                   "distanceKm":  228.3,
+                                   "ascentM":  445,
+                                   "durationH":  11.4,
+                                   "durationText":  "11h21m",
+                                   "avgSpeedKmh":  20,
+                                   "points":  5397,
+                                   "profile":  "fastbike-asia-pacific",
+                                   "source":  "BRouter (brouter.de public API)",
+                                   "file":  "routes/day4-tokushima-imabari.geojson",
+                                   "approximate":  false,
+                                   "start":  [
+                                                 34.06299,
+                                                 134.54998
+                                             ],
+                                   "end":  [
+                                               34.06584,
+                                               132.99819
+                                           ],
+                                   "bbox":  [
+                                                132.9957,
+                                                33.9154,
+                                                134.6038,
+                                                34.3448
+                                            ]
+                               },
+    "day5-shimanami-imabari-onomichi":  {
+                                            "label":  "Imabari -\u003e Shimanami Kaido cycling road -\u003e Onomichi",
+                                            "distanceKm":  69.9,
+                                            "ascentM":  342,
+                                            "durationH":  3.8,
+                                            "durationText":  "3h47m",
+                                            "avgSpeedKmh":  18.4,
+                                            "points":  2670,
+                                            "profile":  "fastbike-asia-pacific",
+                                            "source":  "BRouter (brouter.de public API)",
+                                            "file":  "routes/day5-shimanami-imabari-onomichi.geojson",
+                                            "approximate":  false,
+                                            "start":  [
+                                                          34.06584,
+                                                          132.99819
+                                                      ],
+                                            "end":  [
+                                                        34.40482,
+                                                        133.19012
+                                                    ],
+                                            "bbox":  [
+                                                         132.9732,
+                                                         34.0637,
+                                                         133.2031,
+                                                         34.407
+                                                     ]
+                                        },
+    "day6-imabari-matsuyama":  {
+                                   "label":  "Imabari -\u003e Hojo -\u003e Matsuyama",
+                                   "distanceKm":  46.5,
+                                   "ascentM":  55,
+                                   "durationH":  2.3,
+                                   "durationText":  "2h17m",
+                                   "avgSpeedKmh":  20.2,
+                                   "points":  1172,
+                                   "profile":  "fastbike-asia-pacific",
+                                   "source":  "BRouter (brouter.de public API)",
+                                   "file":  "routes/day6-imabari-matsuyama.geojson",
+                                   "approximate":  false,
+                                   "start":  [
+                                                 34.06584,
+                                                 132.99819
+                                             ],
+                                   "end":  [
+                                               33.839,
+                                               132.76585
+                                           ],
+                                   "bbox":  [
+                                                132.7475,
+                                                33.8383,
+                                                132.9982,
+                                                34.0683
+                                            ]
+                               },
+    "day7-matsuyama-misaki":  {
+                                  "label":  "Matsuyama -\u003e Iyo -\u003e Nagahama -\u003e Yawatahama -\u003e Sadamisaki -\u003e Misaki Port",
+                                  "distanceKm":  114.4,
+                                  "ascentM":  1265,
+                                  "durationH":  7.6,
+                                  "durationText":  "7h35m",
+                                  "avgSpeedKmh":  15.1,
+                                  "points":  3267,
+                                  "profile":  "fastbike-asia-pacific",
+                                  "source":  "BRouter (brouter.de public API)",
+                                  "file":  "routes/day7-matsuyama-misaki.geojson",
+                                  "approximate":  false,
+                                  "start":  [
+                                                33.839,
+                                                132.76585
+                                            ],
+                                  "end":  [
+                                              33.39043,
+                                              132.1175
+                                          ],
+                                  "bbox":  [
+                                               132.1175,
+                                               33.3863,
+                                               132.7692,
+                                               33.839
+                                           ]
+                              },
+    "day7b-saganoseki-home":  {
+                                  "label":  "Saganoseki Port -\u003e Oita Terasaki",
+                                  "distanceKm":  28.2,
+                                  "ascentM":  30,
+                                  "durationH":  1.4,
+                                  "durationText":  "1h23m",
+                                  "avgSpeedKmh":  20.1,
+                                  "points":  566,
+                                  "profile":  "fastbike-asia-pacific",
+                                  "source":  "BRouter (brouter.de public API)",
+                                  "file":  "routes/day7b-saganoseki-home.geojson",
+                                  "approximate":  false,
+                                  "start":  [
+                                                33.24413,
+                                                131.88778
+                                            ],
+                                  "end":  [
+                                              33.23633,
+                                              131.61359
+                                          ],
+                                  "bbox":  [
+                                               131.6136,
+                                               33.2363,
+                                               131.8878,
+                                               33.2555
+                                           ]
+                              }
+}
