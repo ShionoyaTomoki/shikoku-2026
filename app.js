@@ -474,3 +474,10 @@ if (document.readyState === 'loading') {
 } else {
   boot();
 }
+
+/* 圏外でも行程を開けるよう、アプリとルートを端末に保存しておく */
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js').catch(function () { /* 使えなくても通常動作する */ });
+  });
+}
